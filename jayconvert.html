@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Converter from any file to CSV and Text file</h1>
+    <form action="convert.php" method="POST" enctype="multipart/form-data">
+      <label for="file">Select a file:</label>
+      <input type="file" id="file" name="file">
+      <label for="format">Convert to:</label>
+      <select id="format" name="format">
+       
+        <option value="txt">Text</option>
+        <option value="csv">CSV</option>
+      </select>
+      <button type="submit" id="convertBtn">Convert</button>
+    </form>
+  </div>
+</body>
+</html>
